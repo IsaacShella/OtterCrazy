@@ -1,9 +1,12 @@
 package com.example.isaacss.ottercrazy;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
 
 public class OtterMain extends AppCompatActivity {
 
@@ -11,6 +14,27 @@ public class OtterMain extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otter_main);
+
+        Button myButton = (Button) findViewById(R.id.button_two);
+        myButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                sendToAnotherScreen();
+
+            }
+        });
+
+        Button myButton2 = (Button) findViewById(R.id.button_one);
+        myButton.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                sendToAnotherScreen();
+    }
+    public void sendMessage(View view){
+        Intent intent = new Intent(this,.class);
+        startActivity(intent);
     }
 
     @Override
