@@ -16,6 +16,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".OtterNumber2"
+            android:label="@string/title_activity_otter_number2"
+            android:parentActivityName=".OtterMain" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.isaacss.ottercrazy.OtterMain" />
+        </activity>
+        <activity
+            android:name=".OtterNumber3"
+            android:label="@string/title_activity_otter_number3" >
+        </activity>
     </application>
 
 </manifest>
