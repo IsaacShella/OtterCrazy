@@ -15,25 +15,13 @@ public class OtterMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otter_main);
 
-        Button myButton = (Button) findViewById(R.id.button_two);
-        myButton.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                sendToAnotherScreen();
-
-            }
-        });
-
-        Button myButton2 = (Button) findViewById(R.id.button_one);
-        myButton.setOnClickListener(new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                sendToAnotherScreen();
     }
-    public void sendMessage(View view){
-        Intent intent = new Intent(this,.class);
+    public void BabyOtter(View view){
+        Intent intent = new Intent(this,OtterNumber2.class);
+        startActivity(intent);
+    }
+    public void GrownUpOtter(View view){
+        Intent intent = new Intent(this,OtterNumber3.class);
         startActivity(intent);
     }
 
