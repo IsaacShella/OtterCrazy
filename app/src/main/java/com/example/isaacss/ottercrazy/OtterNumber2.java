@@ -1,9 +1,11 @@
 package com.example.isaacss.ottercrazy;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class OtterNumber2 extends AppCompatActivity {
 
@@ -11,6 +13,11 @@ public class OtterNumber2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otter_number2);
+    }
+
+    public void GrownUpOtter(View view){
+        Intent intent = new Intent(this,OtterNumber3.class);
+        startActivity(intent);
     }
 
     @Override

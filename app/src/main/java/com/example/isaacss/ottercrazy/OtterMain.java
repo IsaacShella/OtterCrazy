@@ -20,10 +20,6 @@ public class OtterMain extends AppCompatActivity {
         Intent intent = new Intent(this,OtterNumber2.class);
         startActivity(intent);
     }
-    public void GrownUpOtter(View view){
-        Intent intent = new Intent(this,OtterNumber3.class);
-        startActivity(intent);
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

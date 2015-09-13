@@ -6,4 +6,7 @@
     <string name="title_activity_otter_number2">OtterNumber2</string>
     <string name="title_activity_otter_number3">OtterNumber3</string>
     <string name="babyOtter">Click his nose to see him all grown up!</string>
+    <string name="intro_message">Welcome to Otter Crazy!\nThis app is designed *exclusively* for otters. Click the button below to begin.</string>
+    <string name="begin_button">Begin</string>
+    <string name="baby_text">I\'m a baby otter!\nBoop me to watch me grow up!</string>
 </resources>
